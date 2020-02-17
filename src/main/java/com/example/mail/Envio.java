@@ -11,7 +11,7 @@ public class Envio {
 	
 		
 		try {
-			Evento evento = new Evento(origem, destino, "testando envio de email viadinho pão com ovo", corpo);
+			Evento evento = new Evento(origem, destino, "testando envio de email", corpo);
 			EmailConfig config = new EmailConfig("smtp.gmail.com", 587L, usuario, senha);
 			new EnvioEmail().envio(evento, config);
 			
